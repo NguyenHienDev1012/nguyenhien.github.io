@@ -2,21 +2,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Lab1</title>
+<title>Lab02</title>
 <!-- Google Fonts -->
-	<link href="http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700itali" rel="stylesheet">
-	<link href="http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,500,200,100,600" rel="stylesheet">
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="css/misc.css">
 	<link rel="stylesheet" href="css/blue-scheme.css">
+	<link rel="stylesheet" href="bootstrap/bootstrap.css">
 	
 	<!-- JavaScripts -->
 	<script src="js/jquery-1.10.2.min.js"></script>
 	<script src="js/jquery-migrate-1.2.1.min.js"></script>
 
- <link rel="shortcut icon" href="images/includes/logonlu.png/" type="image/x-icon" />
+ <link rel="shortcut icon" href="images/includes/logonlu.png" type="image/x-icon" />
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -33,7 +32,7 @@
 
 					<div class="pull-left logo">
 						<a href="index.html">
-							<img src="images/includes/logofit.png/" alt="logo" style="width: 40px; height: 40px">
+							<img src="images/includes/logofit.png" alt="logo" style="width: 40px; height: 40px">
 						</a>
 					</div>	<!-- /.logo -->
 
@@ -52,7 +51,7 @@
 					            	</ul>
 					            </li>
 					          
-					            <li> <a href="archives.html" >About me</a></li>
+					            <li> <a href="aboutme.html" >About me</a></li>
 					            <li> <a href="contact.html"> Contact</a></li>
 							</ul> <!-- /.sf-menu -->
 						</nav> <!-- /.main-nav -->
@@ -76,9 +75,25 @@
 	
 	
    <section class="first-widget">
-	     
    <div class="container">
-  <h1 style="color: blue;text-align: center;" class="w3-container w3-lobster">Lab 2</h1>
+   	  <h1 style="color: blue;text-align: center;" >LAB 2</h1>
+   
+  <div class="row">
+				<nav class="navbar navbar-expand-sm bg-light justify-content-center">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="lab1.html">Lab
+								1</a></li>
+						<li class="nav-item"><a class="nav-link" href="lab2.html">Lab
+								2</a></li>
+						<li class="nav-item"><a class="nav-link" href="lab3.html">Lab
+								3</a></li>
+						<li class="nav-item"><a class="nav-link" href="lab4.html">Lab
+								4</a></li>
+						<li class="nav-item"><a class="nav-link" href="lab5.html">Lab
+								5</a></li>
+					</ul>
+				</nav>
+			</div>
 
   <ul class="nav nav-tabs">
      <li class="active"><a data-toggle="tab" href="#requirements"  ><span class="glyphicon glyphicon-tasks"></span> Requirements</a></li>
@@ -91,22 +106,208 @@
   <div class="tab-content">
     <div id="requirements" class="tab-pane fade in active">
     <br><br>
-      <p class="w3-container w3-lobster">Lab2</p>
-      <p></p>
+    
+    <table class="table table-bordered">
+						<thead>
+							<tr>
+								<th data-toggle="tooltip" title="Số thứ tự">STT</th>
+								<th>Nội dung yêu cầu</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Tạo ra một user scenario.</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Chọn 1 bước trong user scenario để thiết kế 1 form giao
+									diện Web trên công cụ thiết kế đã chọn. Sau đó tạo ra file html
+									tương ứng cho thiết kế này.</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Upload lên Azure: trong file html có chèn hình ảnh của
+									user scenario ở (1) và đường dẫn của file thiết kế ở (2).</td>
+							</tr>
+						</tbody>
+					</table>
+    
+    
     </div>
     <div id="design" class="tab-pane fade">
     <br><br>
-      <p class="w3-container w3-lobster">Design2</h3>
+    
+    <div class="container">
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><Strong>Thiết kế trên giấy</Strong></a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body">
+        
+       <button type="button" class="btn btn-primary"><img src="images/icon/download.png" style="width: 30px;height:15px;"> Tải về</button>
+        
+        
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><Strong>Thiết kế trên figma</Strong></a>
+          
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+        
+       <button type="button" class="btn btn-primary"><img src="images/icon/download.png" style="width: 30px;height:15px;"> Tải về</button>
+        </div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><strong>User scenario</strong></a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body"> 
+          <img alt="" src="images/filedesign/userscenario.png">
+           <button type="button" class="btn btn-primary"><img src="images/icon/download.png" style="width: 30px;height:15px;"> Tải về</button>
+          
+        </div>
+      </div>
+    </div>
+     <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4"><strong>Tải toàn bộ file thiết kế</strong></a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+      
+        <div class="panel-body" style="text-align: center;">
+        <button type="button" class="btn btn-primary"><img src="images/icon/download.png" style="width: 50px;height: 30px;"> Tải về</button>
+        
+        </div>
+      </div>
+    </div>
+  </div> 
+</div>
+    
+    
     </div>
     <div id="implements" class="tab-pane fade">
     <br><br>
-      <p class="w3-container w3-lobster">Implements2</h3>
+    
+    <div class="row">
+			<div class="col-md-4">
+			<br>
+		    <button type="button" class="btn btn-default" style="width: 50px;height: 50px; border-radius: 65px;" ><img alt="" src="images/icon/cart.png" width="30px" height="30px"></button>
+			</div>
+			<div class="col-md-8">
+			<br>
+				<div class="row">
+					<div class="col-md-5">
+						<input type="text" class="form-control" aria-label="Small"
+							style="width: 350px; text-align: center;"
+							placeholder="Nhập tên sản phẩm...">
+					</div>
+					<div class="col-md-7">
+						<button type="button" class="btn btn-success">
+							<img src="images/icon/search.png" width="20px" height="20px">
+						</button>
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+		
+		 <div class="row">
+		  <div class="col"> <strong>Xem giỏ hàng</strong></div>
+		 </div>
+ 
+      <div class="row listProduct" style="text-align: center;">
+       		 <div class="col-md-2" style="background-color: #CCFCFF;">
+       		 <p style="text-align: right;color: #FF1F1F">New</p>
+       		 <img alt="" src="images/product/adidas-yeezy-350-v2-clay-replica.jpg"  width="161px" height="101px">
+       		 
+       		 <p>Giày Adidas yeezy</p>
+       		 <p>400.000đ</p>
+       		 <button type="button" class="btn btn-warning"><strong><b>Mua ngay</b></strong></button>
+       		 </div>
+            <div class="col-md-1"></div>
+        	 <div class="col-md-2" style="background-color: #CCFCFF;">
+        	  <p style="text-align: right; color: #FF1F1F"">50% OFF</p>
+       		 <img alt="" src="images/product/Converse-red-hi-00.jpg"  width="161px" height="101px">
+       		 
+       		 <p>Giày Adidas yeezy</p>
+       		 <p>400.000đ</p>
+       		 <button type="button" class="btn btn-warning"><strong><b>Mua ngay</b></strong></button>
+        	 </div>
+        	  <div class="col-md-1"></div>
+          
+         	 <div class="col-md-2" style="background-color: #CCFCFF;">
+         	  <p style="text-align: right;color: #FF1F1F"">Hết</p>
+       		 <img alt="" src="images/product/Converse-grey-low-00.jpg" width="161px" height="101px">
+       		 
+       		 <p>Giày Adidas yeezy</p>
+       		 <p>400.000đ</p>
+       		 <button type="button" class="btn btn-warning"><strong><b>Mua ngay</b></strong></button>
+       		 
+             </div>
+              <div class="col-md-1"></div>
+      
+      </div>
+      
+   <div class="row">
+           <div class="col-md-6"></div>
+			<div class="col-md-6">
+
+				<ul class="pagination">
+					<li><a href="#" title="Xem trang trước"> << </a></li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#" title="Xem trang kề"> >> </a></li>
+				</ul>
+
+		</div>
+ 
+ 
+    
     </div>
   </div>
 </div><!-- End tab-content -->
 
  </section>
-  
+  <footer class="site-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<nav class="footer-nav clearfix">
+						<ul class="footer-menu">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="aboutme.html">Portfolio</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul> <!-- /.footer-menu -->
+					</nav> <!-- /.footer-nav -->
+				</div> <!-- /.col-md-12 -->
+			</div> <!-- /.row -->
+			<div class="row">
+				<div class="col-md-12">
+					<p></p>
+				</div> <!-- /.col-md-12 -->
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
+	</footer> <!-- /.site-footer -->
 
 	<!-- Scripts -->
 	<script src="js/min/plugins.min.js"></script>
