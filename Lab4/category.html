@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Các loại giày</title>
+	<link rel="icon" href="img/Fevicon.png" type="image/png">
+  <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="vendors/themify-icons/themify-icons.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.theme.default.min.css">
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="vendors/nice-select/nice-select.css">
+  <link rel="stylesheet" href="vendors/nouislider/nouislider.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+  <header class="header_area">
+	<div class="main_menu">
+		<nav class="navbar navbar-expand-lg navbar-light">
+		<div class="container">
+			<a class="navbar-brand logo_h" href="index.html"><img
+				src="img/logo.png" alt=""></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+			<div class="collapse navbar-collapse offset"
+				id="navbarSupportedContent">
+				<!-- 				<ul class="nav navbar-nav menu_nav ml-auto mr-auto">
+				để căn giữa thanh header
+				 -->
+				<ul class="nav navbar-nav menu_nav  mr-auto">
+					<li class="nav-item "><a class="nav-link"
+						href="index.html">Trang chủ</a></li>
+					<li class="nav-item active"><a class="nav-link"
+						href="category.html">Tất cả loại giày</a></li>
+					<li class="nav-item"><a class="nav-link"
+						href="contact.html">Liên hệ</a></li>
+				</ul>
+
+				<ul class="nav-shop">
+					<li class="nav-item"><button>
+							<i class="ti-search"></i>
+						</button></li>
+					<li class="nav-item"><button>
+							<i class="ti-shopping-cart"></i><span class="nav-shop__circle">
+							</span>
+						</button></li>
+					<li class="nav-item"><a class="button button-header" href="RegisterController#register" style="border-color: black;background-color:#92eaf9"><span style="color: white">Đăng ký</span></a></li>
+				    <li class="nav-item"><a class="button button-header" href="LoginController#login" style="border-color: black;background-color:#92eaf9"><span style="color: white">Đăng nhập</span></a></li>
+					
+				</ul>
+			</div>
+		</div>
+		</nav>
+	</div>
+	</header>
+	<!--================ End Header Menu Area =================-->
+<!-- Breadcrum -->
+	<section>
+	<div class="container">
+				<nav  style="margin-top:15px; margin-bottom:0px;">
+				<ol class="breadcrumb" style="background:#f1f6f7;">
+					<li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+					<li class="breadcrumb-item active" aria-current="page"><a href="#">Tất cả loại giày</a></li>
+				</ol>
+				</nav>
+			</div>
+	</section>
+	<!-- End breadcrum -->
+
+
+	
+
+	<!-- ================ category section start ================= -->		  
+ 	<section class="section-margin--small mb-5" id="category" style="margin-top:5px">
+	<div class="container">
+		<div class="row"  >
+			<div class="col-xl-3 col-lg-4 col-md-5">
+				<div class="sidebar-categories">
+					<div class="head">Loại giày</div>
+					<ul class="main-categories">
+						<li class="common-filter">
+								<ul>
+									<li class="filter-list"><a href="FindByCategoryController?choose=adidas">Adidas</a></li>
+								    <li class="filter-list"><a href="FindByCategoryController?choose=converse">Converse</a></li>
+                                    <li class="filter-list"><a href="FindByCategoryController?choose=vans">Vans</a></li>
+								</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="sidebar-filter">
+					<div class="top-filter-head">Lọc Theo</div>
+					<div class="common-filter">
+						<div class="head"><span style="color: black;"><b>Sắp xếp theo giá</b></span></div>
+							<ul>
+								<li class="filter-list"><a href="ArrangeByPriceController?arrangeuserchoose=lowtohigh">Từ thấp đến cao</a></li>
+								<li class="filter-list"><a href="ArrangeByPriceController?arrangeuserchoose=hightolow">Từ cao xuống thấp</a></li>
+								
+							</ul>
+					</div>
+					<div class="common-filter">
+						<div class="head" ><span style="color: black"><b>Khoảng giá</b></span></div>
+							<ul>
+								<li class="filter-list"><a href="">200.000 - 300.000đ</a></li>
+						        <li class="filter-list"><a href="">300.000 - 1000.000đ</a></li>
+						        <li class="filter-list"><a href="">1000.000 trở lên</a></li>
+						        
+								
+							</ul>
+					</div>
+
+				</div>
+			</div>
+			<div class="col-xl-9 col-lg-8 col-md-7">
+				<!-- Start Filter Bar -->
+				<form name="myform" onkeyup="searchByName()">
+				<div class="filter-bar d-flex flex-wrap align-items-center">
+					<div class="sorting">
+						<select>
+							<option value="1">Adidas</option>
+							<option value="1">Converse</option>
+							<option value="1">Vans</option>
+						</select>
+					</div>
+					
+					<div>
+						<div class="input-group filter-bar-search">
+							<input type="text" placeholder="Search" name="name_Product" style="width: 500px">
+							<div class="input-group-append">
+							</div>
+						</div>
+					</div>
+				</div>
+				</form>
+				<!-- End Filter Bar -->
+          <!-- End Filter Bar -->
+          <!-- Start Best Seller -->
+          <section class="lattest-product-area pb-40 category-list">
+            <div class="row">
+              <div class="col-md-6 col-lg-4">
+                <div class="card text-center card-product">
+                  <div class="card-product__img">
+                    <img class="card-img" src="../Lab4/img/product/adidas-stan-smith-xanh-replica.jpg" alt="">
+                    <ul class="card-product__imgOverlay">
+                      <li><button><i class="ti-search"></i></button></li>
+                      <li><button><i class="ti-shopping-cart"></i></button></li>
+                      <li><button><i class="ti-heart"></i></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-product__title"><a href="#">Adidas Sakanm</a></h4>
+                    <p class="card-product__price">$150.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card text-center card-product">
+                  <div class="card-product__img">
+                    <img class="card-img" src="../Lab4/img/product/adidas-yeezy-350-v2-beluga-2-replica.jpeg" alt="">
+                    <ul class="card-product__imgOverlay">
+                      <li><button><i class="ti-search"></i></button></li>
+                      <li><button><i class="ti-shopping-cart"></i></button></li>
+                      <li><button><i class="ti-heart"></i></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-product__title"><a href="#">Adidas Tanlm</a></h4>
+                    <p class="card-product__price">$150.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card text-center card-product">
+                  <div class="card-product__img">
+                    <img class="card-img" src="../Lab4/img/product/adidas-yeezy-350-v2-bluetint-replica.jpeg" alt="">
+                    <ul class="card-product__imgOverlay">
+                      <li><button><i class="ti-search"></i></button></li>
+                      <li><button><i class="ti-shopping-cart"></i></button></li>
+                      <li><button><i class="ti-heart"></i></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-product__title"><a href="#">Converse Hamsaika</a></h4>
+                    <p class="card-product__price">$150.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card text-center card-product">
+                  <div class="card-product__img">
+                    <img class="card-img" src="../Lab4/img/product/adidas-yeezy-350-v2-clay-replica.jpg" alt="">
+                    <ul class="card-product__imgOverlay">
+                      <li><button><i class="ti-search"></i></button></li>
+                      <li><button><i class="ti-shopping-cart"></i></button></li>
+                      <li><button><i class="ti-heart"></i></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-product__title"><a href="#">Vans Saka</a></h4>
+                    <p class="card-product__price">$150.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card text-center card-product">
+                  <div class="card-product__img">
+                    <img class="card-img" src="../Lab4/img/product/adidas-yeezy-350-v2-synth-reflective-replica.jpg" alt="">
+                    <ul class="card-product__imgOverlay">
+                      <li><button><i class="ti-search"></i></button></li>
+                      <li><button><i class="ti-shopping-cart"></i></button></li>
+                      <li><button><i class="ti-heart"></i></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-product__title"><a href="#">Converse Equan</a></h4>
+                    <p class="card-product__price">$150.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card text-center card-product">
+                  <div class="card-product__img">
+                    <img class="card-img" src="../Lab4/img/product/adidas-yeezy-350-v2-glow-replica.jpg" alt="">
+                    <ul class="card-product__imgOverlay">
+                      <li><button><i class="ti-search"></i></button></li>
+                      <li><button><i class="ti-shopping-cart"></i></button></li>
+                      <li><button><i class="ti-heart"></i></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-product__title"><a href="#">Adidas Alasa</a></h4>
+                    <p class="card-product__price">$150.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card text-center card-product">
+                  <div class="card-product__img">
+                    <img class="card-img" src="../Lab4/img/product/adidas-yeezy-350-v2-hyperspace-replica.jpg" alt="">
+                    <ul class="card-product__imgOverlay">
+                      <li><button><i class="ti-search"></i></button></li>
+                      <li><button><i class="ti-shopping-cart"></i></button></li>
+                      <li><button><i class="ti-heart"></i></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-product__title"><a href="#">Converse Hanbokm</a></h4>
+                    <p class="card-product__price">$150.00</p>
+                  </div> 
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card text-center card-product">
+                  <div class="card-product__img">
+                    <img class="card-img" src="../Lab4/img/product/adidas-yeezy-350-v2-static-replica.jpeg" alt="">
+                    <ul class="card-product__imgOverlay">
+                      <li><button><i class="ti-search"></i></button></li>
+                      <li><button><i class="ti-shopping-cart"></i></button></li>
+                      <li><button><i class="ti-heart"></i></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-product__title"><a href="#">Hanm Kanm</a></h4>
+                    <p class="card-product__price">$150.00</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="card text-center card-product">
+                  <div class="card-product__img">
+                    <img class="card-img" src="../Lab4/img/product/adidas-yeezy-350-v2-true-form-replica.jpg" alt="">
+                    <ul class="card-product__imgOverlay">
+                      <li><button><i class="ti-search"></i></button></li>
+                      <li><button><i class="ti-shopping-cart"></i></button></li>
+                      <li><button><i class="ti-heart"></i></button></li>
+                    </ul>
+                  </div>
+                  <div class="card-body">
+                    <h4 class="card-product__title"><a href="#">Vans Nbamn</a></h4>
+                    <p class="card-product__price">$150.00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End Best Seller -->
+        </div>
+      </div>
+    </div>
+  </section>
+	<!-- ================ category section end ================= -->
+	<section><!-- Pagination -->
+	<ul class="pagination" style="margin-left: 1020px">
+    <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+  </ul>
+ </section>		  
+
+		
+
+	<!-- ================ Subscribe section start ================= -->		  
+ <section class="subscribe-position">
+	<div class="container">
+		<div class="subscribe text-center">
+			<h3 class="subscribe__title">Nhận thông báo mới nhất</h3>
+			<p>Bạn sẽ nhận được những sản phẩm và thông báo sớm nhất.</p>
+			<div id="mc_embed_signup">
+				<form target="_blank"
+					action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+					method="get" class="subscribe-form form-inline mt-5 pt-1">
+					<div class="form-group ml-sm-auto">
+						<input class="form-control mb-1" type="email" name="EMAIL"
+							placeholder="Nhập email của bạn..." onfocus="this.placeholder = ''"
+							onblur="this.placeholder = 'Your Email Address '">
+						<div class="info"></div>
+					</div>
+					<button class="button button-subscribe mr-auto mb-1" type="submit">Đăng ký ngay</button>
+					<div style="position: absolute; left: -5000px;">
+						<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1"
+							value="" type="text">
+					</div>
+
+				</form>
+			</div>
+
+		</div>
+	</div>
+	</section>
+	<!-- ================ Subscribe section end ================= -->		  
+
+
+  <!--================ Start footer Area  =================-->	
+		<footer class="footer">
+		<div class="footer-area">
+			<div class="container">
+				<div class="row section_gap">
+					<div class="col-lg-3 col-md-6 col-sm-6">
+						<div>
+						<!-- Plugin chat with facebook -->
+						<h4 class="footer_title">Fanpage</h4>
+							<div class="fb-page" data-href="https://www.facebook.com/Shoeshop-109401420487949/?modal=admin_todo_tour" 
+data-tabs="timeline" data-width="750px" data-height="100px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+<blockquote cite="https://www.facebook.com/Shoeshop-109401420487949/?modal=admin_todo_tour" 
+class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Shoeshop-109401420487949/?modal=admin_todo_tour">Shoeshop</a></blockquote></div>
+							
+						</div>
+					</div>
+					<div class="offset-lg-1 col-lg-2 col-md-6 col-sm-6">
+						<div class="single-footer-widget tp_widgets">
+							<h4 class="footer_title">Liên kết</h4>
+							<ul class="list">
+								<li><a href="#">Trang chủ</a></li>
+								<li><a href="#">Sản phẩm</a></li>
+								<li><a href="#">Chi nhanh</a></li>
+								<li><a href="#">Nhãn hiệu</a></li>
+								<li><a href="#">Liên hệ</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-2 col-md-6 col-sm-6">
+						<div class="single-footer-widget instafeed">
+							<h4 class="footer_title">Hình ảnh</h4>
+							<ul class="list instafeed d-flex flex-wrap">
+									<li><img src="../Lab4/img/product/adidas-yeezy-350-v2-static-replica.jpeg" alt="" style="width: 50px;height: 50px"></li>
+								<li><img src="../Lab4/img/product/adidas-yeezy-350-v2-hyperspace-replica.jpg" alt="" style="width: 50px;height: 50px"></li>
+								<li><img src="../Lab4/img/product/adidas-yeezy-350-v2-synth-reflective-replica.jpg" alt="" style="width: 50px;height: 50px"></li>
+								<li><img src="../Lab4/img/product/adidas-yeezy-350-v2-glow-replica.jpg" alt="" style="width: 50px;height: 50px"></li>
+								<li><img src="../Lab4/img/product/adidas-yeezy-350-v2-glow-replica.jpg" alt="" style="width: 50px;height: 50px"></li>
+								<li><img src="../Lab4/img/product/adidas-yeezy-350-v2-glow-replica.jpg" alt="" style="width: 50px;height: 50px"></li>
+							</ul>
+						</div>
+					</div>
+					<div class="offset-lg-1 col-lg-3 col-md-6 col-sm-6">
+						<div class="single-footer-widget tp_widgets">
+							<h4 class="footer_title">Liên hệ</h4>
+							<div class="ml-40">
+								<p class="sm-head">
+									<span class="fa fa-location-arrow"></span>
+									Văn phòng
+								</p>
+								<p>Trường Đại Học NL TP.HCM</p>
+	
+								<p class="sm-head">
+									<span class="fa fa-phone"></span>
+									Số điện thoại
+								</p>
+								<p>
+									Hiền: +0343288735 <br>
+                                    Nghĩa: +0338017738
+								</p>
+	
+								<p class="sm-head">
+									<span class="fa fa-envelope"></span>
+									Email
+								</p>
+								<p>
+									shoeshop.nlu@gmail.com<br>
+									<!-- www.shoeshop.com
+									<!-- Pass:shoeshop77 -->
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+<div> 
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script></div>
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row d-flex">
+					<p class="col-lg-12 footer-text text-center">
+						
+        Copyright &copy;<script>document.write(new Date().getFullYear());</script>  by Nguyễn Hiền
+
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!--================ End footer Area  =================-->
+
+
+
+  <script src="vendors/jquery/jquery-3.2.1.min.js"></script>
+  <script src="vendors/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="vendors/skrollr.min.js"></script>
+  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="vendors/nice-select/jquery.nice-select.min.js"></script>
+  <script src="vendors/nouislider/nouislider.min.js"></script>
+  <script src="vendors/jquery.ajaxchimp.min.js"></script>
+  <script src="vendors/mail-script.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
